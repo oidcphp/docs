@@ -33,9 +33,9 @@ End-User          Relying Party (your app)                OpenID Provider
 
 | Step | Library API |
 | --- | --- |
-| Read the provider configuration | [`Issuer::discover()`](/docs/guides/discovery/) |
-| 2, 3 | [`Client::initAuthorizationParameters()`, `Client::createAuthorizeRedirectResponse()`](/docs/guides/authentication-request/) |
-| 5 to 8 | [`Client::handleCallback()`](/docs/guides/callback/) |
+| Read the provider configuration | [`Issuer::discover()`](/guides/discovery/) |
+| 2, 3 | [`Client::initAuthorizationParameters()`, `Client::createAuthorizeRedirectResponse()`](/guides/authentication-request/) |
+| 5 to 8 | [`Client::handleCallback()`](/guides/callback/) |
 
 ## Main classes
 

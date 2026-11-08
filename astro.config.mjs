@@ -3,8 +3,7 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
 export default defineConfig({
-  site: 'https://oidcphp.github.io',
-  base: '/docs',
+  site: 'https://oidcphp.oauth2.tw',
   integrations: [
     starlight({
       title: 'oidcphp',

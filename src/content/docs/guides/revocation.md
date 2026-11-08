@@ -14,6 +14,6 @@ $client->revoke($tokenSet->accessToken(), [
 ]);
 ```
 
-The request goes to the `revocation_endpoint` of the provider metadata, with the same [client authentication](/docs/guides/client-authentication/) as the token endpoint.
+The request goes to the `revocation_endpoint` of the provider metadata, with the same [client authentication](/guides/client-authentication/) as the token endpoint.
 
 An error response, or a failed HTTP request, throws `OAuth2ServerException`.

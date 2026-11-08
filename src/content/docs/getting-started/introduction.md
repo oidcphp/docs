@@ -7,19 +7,19 @@ description: What oidcphp is and what it implements.
 
 ## Philosophy
 
-- **The specification is the source of truth.** Every MUST requirement is meant to be implemented, and a validation step is never skipped for convenience. Where the library does not follow the specification yet, the gap is listed in [Known Issues](/docs/reference/known-issues/).
+- **The specification is the source of truth.** Every MUST requirement is meant to be implemented, and a validation step is never skipped for convenience. Where the library does not follow the specification yet, the gap is listed in [Known Issues](/reference/known-issues/).
 - **Security second.** When the specification leaves a choice open, the safer behavior is the default.
 - **Framework agnostic.** The library only speaks [PSR-7](https://www.php-fig.org/psr/psr-7/) messages, so it fits any framework or plain PHP.
 
 ## What it does
 
-- Reads the provider configuration with [Discovery](/docs/guides/discovery/).
-- Registers a client with [Dynamic Client Registration](/docs/guides/registration/).
-- Builds the [Authentication Request](/docs/guides/authentication-request/) that sends the user to the provider.
-- [Handles the callback](/docs/guides/callback/), exchanges the authorization code for tokens, and [validates the ID Token](/docs/guides/id-token-validation/).
-- Refreshes and [revokes](/docs/guides/revocation/) tokens, and starts [RP-Initiated Logout](/docs/guides/logout/).
+- Reads the provider configuration with [Discovery](/guides/discovery/).
+- Registers a client with [Dynamic Client Registration](/guides/registration/).
+- Builds the [Authentication Request](/guides/authentication-request/) that sends the user to the provider.
+- [Handles the callback](/guides/callback/), exchanges the authorization code for tokens, and [validates the ID Token](/guides/id-token-validation/).
+- Refreshes and [revokes](/guides/revocation/) tokens, and starts [RP-Initiated Logout](/guides/logout/).
 
-See [Specifications](/docs/reference/specifications/) for the full list.
+See [Specifications](/reference/specifications/) for the full list.
 
 ## Requirements
 
@@ -29,5 +29,5 @@ See [Specifications](/docs/reference/specifications/) for the full list.
 
 ## Next Steps
 
-- [Installation](/docs/getting-started/installation/)
-- [Quick Start](/docs/getting-started/quick-start/)
+- [Installation](/getting-started/installation/)
+- [Quick Start](/getting-started/quick-start/)

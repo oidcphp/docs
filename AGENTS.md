@@ -4,7 +4,7 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 
 ## Purpose
 
-This repository is the user documentation of [`oidc/core`](https://github.com/oidcphp/core), built with [Starlight](https://starlight.astro.build/) and published to GitHub Pages.
+This repository is the user documentation of [`oidc/core`](https://github.com/oidcphp/core), built with [Starlight](https://starlight.astro.build/) and published to GitHub Pages at https://oidcphp.oauth2.tw/ (custom domain, no base path).
 
 ## Source of truth
 
@@ -29,7 +29,7 @@ This repository is the user documentation of [`oidc/core`](https://github.com/oi
 - Each page SHOULD start with a short paragraph, then use H2 sections. Prefer code examples over prose.
 - Specification terms MUST follow the specification, such as Relying Party, OpenID Provider, End-User, Authentication Request, and Claim.
 - Specifications MUST be linked to the section anchor. RFCs MUST be linked to `https://www.rfc-editor.org/rfc/rfcNNNN.html#section-X.Y`, and `tools.ietf.org` MUST NOT be used.
-- Internal links MUST include the `/docs/` base path, such as `/docs/guides/callback/`.
+- Internal links MUST be absolute paths from the site root, such as `/guides/callback/`.
 - Files MUST end with a single newline.
 
 ## Commands

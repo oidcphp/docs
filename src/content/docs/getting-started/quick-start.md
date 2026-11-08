@@ -3,7 +3,7 @@ title: Quick Start
 description: Sign a user in with the Authorization Code Flow in plain PHP.
 ---
 
-This page signs a user in with the [Authorization Code Flow](https://openid.net/specs/openid-connect-core-1_0.html#CodeFlowAuth). It uses plain PHP and `$_SESSION` so that every step is visible. With a framework, the steps are the same, see [Concepts](/docs/concepts/overview/).
+This page signs a user in with the [Authorization Code Flow](https://openid.net/specs/openid-connect-core-1_0.html#CodeFlowAuth). It uses plain PHP and `$_SESSION` so that every step is visible. With a framework, the steps are the same, see [Concepts](/concepts/overview/).
 
 You need a client registered at your provider, with:
 
@@ -101,7 +101,7 @@ echo 'Hello, ' . $claims->sub();
 2. exchanges the `code` for tokens at the token endpoint,
 3. validates the ID Token: signature, `iss`, `aud`, `exp`, `iat`, and `nonce`.
 
-If anything fails, an exception is thrown, see [Error Handling](/docs/guides/errors/).
+If anything fails, an exception is thrown, see [Error Handling](/guides/errors/).
 
 :::caution
 Always pass the stored `state` and `nonce`. Without them, `handleCallback()` cannot protect you from CSRF and replay attacks.
@@ -109,6 +109,6 @@ Always pass the stored `state` and `nonce`. Without them, `handleCallback()` can
 
 ## Next Steps
 
-- [Concepts](/docs/concepts/overview/): how the pieces fit together
-- [Handling the Callback](/docs/guides/callback/): the details of `handleCallback()`
-- [Known Issues](/docs/reference/known-issues/): behaviors that do not follow the specification yet
+- [Concepts](/concepts/overview/): how the pieces fit together
+- [Handling the Callback](/guides/callback/): the details of `handleCallback()`
+- [Known Issues](/reference/known-issues/): behaviors that do not follow the specification yet

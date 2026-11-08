@@ -22,7 +22,7 @@ $tokenSet->toArray();
 
 ## Claims
 
-`idTokenClaims()` returns the Claims of the ID Token. When the `TokenSet` comes from `handleCallback()`, the ID Token has already been [validated](/docs/guides/id-token-validation/).
+`idTokenClaims()` returns the Claims of the ID Token. When the `TokenSet` comes from `handleCallback()`, the ID Token has already been [validated](/guides/id-token-validation/).
 
 :::caution
 `idTokenClaims()` only decodes the token, it does not verify it again. Do not use it on a `TokenSet` that you built yourself from untrusted data.

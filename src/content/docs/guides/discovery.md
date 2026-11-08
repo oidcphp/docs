@@ -48,4 +48,4 @@ See [oidcphp/core#16](https://github.com/oidcphp/core/issues/16).
 
 ## Without Discovery
 
-When a provider does not support Discovery, build `ProviderMetadata` by hand, see [Provider and Client Metadata](/docs/concepts/configuration/).
+When a provider does not support Discovery, build `ProviderMetadata` by hand, see [Provider and Client Metadata](/concepts/configuration/).

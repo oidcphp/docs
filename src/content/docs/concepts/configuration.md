@@ -14,7 +14,7 @@ $client = new Client(new Config($providerMetadata, $clientMetadata), $httpClient
 
 ## ProviderMetadata
 
-Describes the OpenID Provider, as defined in [OpenID Connect Discovery 1.0 section 3](https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderMetadata) and [RFC 8414 section 2](https://www.rfc-editor.org/rfc/rfc8414.html#section-2). Usually it comes from [Discovery](/docs/guides/discovery/), but it can also be built by hand:
+Describes the OpenID Provider, as defined in [OpenID Connect Discovery 1.0 section 3](https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderMetadata) and [RFC 8414 section 2](https://www.rfc-editor.org/rfc/rfc8414.html#section-2). Usually it comes from [Discovery](/guides/discovery/), but it can also be built by hand:
 
 ```php
 use OpenIDConnect\Metadata\ProviderMetadata;
@@ -49,9 +49,9 @@ Which values are used:
 | `authorization_endpoint` | Authentication Request |
 | `token_endpoint` | Token request |
 | `id_token_signing_alg_values_supported` | Accepted ID Token signing algorithms |
-| `revocation_endpoint` | [Token Revocation](/docs/guides/revocation/) |
-| `end_session_endpoint` | [RP-Initiated Logout](/docs/guides/logout/) |
-| `registration_endpoint` | [Dynamic Client Registration](/docs/guides/registration/) |
+| `revocation_endpoint` | [Token Revocation](/guides/revocation/) |
+| `end_session_endpoint` | [RP-Initiated Logout](/guides/logout/) |
+| `registration_endpoint` | [Dynamic Client Registration](/guides/registration/) |
 
 ## ClientMetadata
 
@@ -70,7 +70,7 @@ $clientMetadata->id();     // 'my-client'
 $clientMetadata->secret(); // 'my-secret'
 ```
 
-`client_id` and `client_secret` are required. A PHP application on a server is a confidential client, so the library always authenticates to the token endpoint with the secret, see [Client Authentication](/docs/guides/client-authentication/).
+`client_id` and `client_secret` are required. A PHP application on a server is a confidential client, so the library always authenticates to the token endpoint with the secret, see [Client Authentication](/guides/client-authentication/).
 
 ## Caching the metadata
 

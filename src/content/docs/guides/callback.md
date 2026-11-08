@@ -21,9 +21,9 @@ The first argument is the query of the callback. The second argument holds the v
 
 1. **Checks `code`.** It must be present in the callback.
 2. **Checks `state`.** When the callback has a `state`, the stored `state` must be given and equal to it. When you give a stored `state`, the callback must have one.
-3. **Requests the token endpoint** with `grant_type=authorization_code`, `code` and `redirect_uri` ([RFC 6749 section 4.1.3](https://www.rfc-editor.org/rfc/rfc6749.html#section-4.1.3)), authenticated as described in [Client Authentication](/docs/guides/client-authentication/).
-4. **Validates the ID Token** when the response has one, see [ID Token Validation](/docs/guides/id-token-validation/). When `nonce` is given, the ID Token must have a `nonce` Claim with the same value.
-5. Returns a [`TokenSet`](/docs/concepts/token-set/).
+3. **Requests the token endpoint** with `grant_type=authorization_code`, `code` and `redirect_uri` ([RFC 6749 section 4.1.3](https://www.rfc-editor.org/rfc/rfc6749.html#section-4.1.3)), authenticated as described in [Client Authentication](/guides/client-authentication/).
+4. **Validates the ID Token** when the response has one, see [ID Token Validation](/guides/id-token-validation/). When `nonce` is given, the ID Token must have a `nonce` Claim with the same value.
+5. Returns a [`TokenSet`](/concepts/token-set/).
 
 ## Use the same redirect_uri
 
@@ -63,7 +63,7 @@ $tokenSet = $client->handleCallback($query, [/* ... */]);
 | The ID Token signature is invalid | `OpenIDProviderException` |
 | An ID Token Claim is invalid, for example `nonce` | `RelyingPartyException` |
 
-See [Error Handling](/docs/guides/errors/).
+See [Error Handling](/guides/errors/).
 
 :::caution
 Only give `state`, `nonce` and `redirect_uri` as the second argument. In the current version, the values of both arguments, except `nonce`, are also sent to the token endpoint and copied into the `TokenSet` ([oidcphp/core#15](https://github.com/oidcphp/core/issues/15)).
