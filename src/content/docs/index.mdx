@@ -1,0 +1,34 @@
+---
+title: oidcphp
+description: OpenID Connect Relying Party library for PHP, built on PSR interfaces.
+template: splash
+hero:
+  tagline: Sign users in with any OpenID Connect Provider, following the specifications first.
+  actions:
+    - text: Get Started
+      link: /docs/getting-started/introduction/
+      icon: right-arrow
+    - text: GitHub
+      link: https://github.com/oidcphp/core
+      icon: external
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## Highlights
+
+<CardGrid>
+  <Card title="Specification first" icon="approve-check">
+    Behavior follows OpenID Connect Core 1.0 and RFC 6749. Validation steps are not skipped for convenience.
+  </Card>
+  <Card title="Built on PSR" icon="puzzle">
+    Bring your own PSR-7, PSR-17 and PSR-18 implementations. Works with any framework.
+  </Card>
+  <Card title="Discovery and registration" icon="magnifier">
+    Read the provider configuration and register clients dynamically.
+  </Card>
+  <Card title="ID Token validation" icon="seti:lock">
+    Signature, issuer, audience, expiration and nonce are checked for you.
+  </Card>
+</CardGrid>
