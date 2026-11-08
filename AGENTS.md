@@ -22,6 +22,8 @@ This repository is the user documentation of [`oidc/core`](https://github.com/oi
 | `src/content/docs/` | English pages (default locale) |
 | `src/content/docs/zh-tw/` | Traditional Chinese pages, mirroring the English paths |
 | `src/scripts/language-detect.js` | Redirects to `zh-tw` by browser language, inlined into every page head |
+| `src/pages/404.astro` | The 404 page, in both languages since GitHub Pages serves one `404.html` |
+| `src/content/i18n/` | Overrides of the Starlight UI strings per locale |
 | `public/` | Static files |
 
 ## Writing

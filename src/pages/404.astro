@@ -1,0 +1,20 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+---
+
+<StarlightPage
+  frontmatter={{
+    title: 'Page not found',
+    template: 'splash',
+    editUrl: false,
+    pagefind: false,
+    hero: {
+      title: '404',
+      tagline: 'Page not found. Check the URL or try the search. 找不到頁面，請檢查網址或使用搜尋。',
+      actions: [
+        { text: 'Home', link: '/', icon: 'right-arrow' },
+        { text: '首頁', link: '/zh-tw/', icon: 'right-arrow', variant: 'minimal' },
+      ],
+    },
+  }}
+/>

@@ -1,0 +1,6 @@
+{
+  "page.previousLink": "上一頁",
+  "page.nextLink": "下一頁",
+  "page.draft": "這是草稿，正式版本不會包含這一頁。",
+  "heading.anchorLabel": "「{{title}}」段落"
+}

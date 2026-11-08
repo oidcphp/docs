@@ -11,6 +11,8 @@ export default defineConfig({
     starlight({
       title: 'oidcphp',
       description: 'OpenID Connect Relying Party library for PHP',
+      // The 404 page is src/pages/404.astro, in both languages
+      disable404Route: true,
       social: [
         { icon: 'github', label: 'GitHub', href: 'https://github.com/oidcphp/core' },
       ],
