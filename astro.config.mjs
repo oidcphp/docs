@@ -1,6 +1,9 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import { readFileSync } from 'node:fs';
+
+const languageDetect = readFileSync(new URL('./src/scripts/language-detect.js', import.meta.url), 'utf-8');
 
 export default defineConfig({
   site: 'https://oidcphp.oauth2.tw',
@@ -10,6 +13,9 @@ export default defineConfig({
       description: 'OpenID Connect Relying Party library for PHP',
       social: [
         { icon: 'github', label: 'GitHub', href: 'https://github.com/oidcphp/core' },
+      ],
+      head: [
+        { tag: 'script', content: languageDetect },
       ],
       editLink: {
         baseUrl: 'https://github.com/oidcphp/docs/edit/main/',

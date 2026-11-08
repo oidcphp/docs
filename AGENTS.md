@@ -20,12 +20,15 @@ This repository is the user documentation of [`oidc/core`](https://github.com/oi
 | --- | --- |
 | `astro.config.mjs` | Site config and sidebar. A new page MUST be added to the sidebar |
 | `src/content/docs/` | English pages (default locale) |
-| `src/content/docs/zh-tw/` | Traditional Chinese translations, mirroring the English paths |
+| `src/content/docs/zh-tw/` | Traditional Chinese pages, mirroring the English paths |
+| `src/scripts/language-detect.js` | Redirects to `zh-tw` by browser language, inlined into every page head |
 | `public/` | Static files |
 
 ## Writing
 
-- Pages are written in English first. A translation MAY be added under `zh-tw/` with the same path. Untranslated pages fall back to English.
+- Every page MUST exist in both English (`src/content/docs/`) and Traditional Chinese (`src/content/docs/zh-tw/`) with the same path. A change to one MUST be made to the other in the same pull request.
+- Chinese pages MUST use Taiwanese terms, and MUST put a space between CJK characters and half-width letters or digits. Specification terms such as Relying Party, End-User, Authentication Request, and Claim stay in English. Internal links MUST point to `/zh-tw/...` pages.
+- Visitors whose browser prefers Chinese are redirected to `zh-tw` by `src/scripts/language-detect.js`, unless they picked a language with the language picker.
 - Each page SHOULD start with a short paragraph, then use H2 sections. Prefer code examples over prose.
 - Specification terms MUST follow the specification, such as Relying Party, OpenID Provider, End-User, Authentication Request, and Claim.
 - Specifications MUST be linked to the section anchor. RFCs MUST be linked to `https://www.rfc-editor.org/rfc/rfcNNNN.html#section-X.Y`, and `tools.ietf.org` MUST NOT be used.

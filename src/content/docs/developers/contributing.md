@@ -17,6 +17,8 @@ A pull request to `oidcphp/core` that changes the public API or user-visible beh
 
 The documentation describes the latest release line. Classes and methods marked `@internal` are not documented.
 
+The documentation is written in English and Traditional Chinese. The Chinese pages live in `src/content/docs/zh-tw/` with the same paths. Update both when you change a page.
+
 ## Running the site locally
 
 ```sh title="Terminal"

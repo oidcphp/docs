@@ -13,7 +13,7 @@ $response = $client->initiateLogoutRedirectResponse([
 ]);
 ```
 
-Like the Authentication Request, the result is a `302` PSR-7 response. `initiateLogoutFormPostResponse()` builds an HTML form that posts the same parameters instead.
+Like the Authentication Request, the result is a `302` PSR-7 response. `initiateLogoutFormPostResponse()` builds an HTML form that posts the same parameters instead. The form does not escape the parameters yet, see [oidcphp/core#43](https://github.com/oidcphp/core/issues/43).
 
 The parameters are sent as they are. Recommended ones:
 

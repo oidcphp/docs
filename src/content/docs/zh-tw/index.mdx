@@ -1,0 +1,34 @@
+---
+title: oidcphp
+description: 以 PSR 介面打造的 PHP OpenID Connect Relying Party 函式庫。
+template: splash
+hero:
+  tagline: 以規範為優先，讓使用者透過任何 OpenID Connect Provider 登入。
+  actions:
+    - text: 開始使用
+      link: /zh-tw/getting-started/introduction/
+      icon: right-arrow
+    - text: GitHub
+      link: https://github.com/oidcphp/core
+      icon: external
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## 特色
+
+<CardGrid>
+  <Card title="規範優先" icon="approve-check">
+    行為遵循 OpenID Connect Core 1.0 與 RFC 6749，不會為了方便而省略驗證步驟。
+  </Card>
+  <Card title="以 PSR 為基礎" icon="puzzle">
+    自由搭配 PSR-7、PSR-17、PSR-18 的實作，可用於任何框架。
+  </Card>
+  <Card title="Discovery 與註冊" icon="magnifier">
+    讀取 Provider 設定，並以 Dynamic Client Registration 註冊 client。
+  </Card>
+  <Card title="ID Token 驗證" icon="seti:lock">
+    自動檢查簽章、issuer、audience、過期時間與 nonce。
+  </Card>
+</CardGrid>
