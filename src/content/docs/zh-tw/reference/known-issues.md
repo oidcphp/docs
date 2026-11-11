@@ -15,7 +15,6 @@ description: 目前尚未符合規範的行為。
 | [#20](https://github.com/oidcphp/core/issues/20) | `client_secret_basic` 沒有對 credentials 做 form-urlencode | `client_id` 與 `client_secret` 避免特殊字元，或改用 `client_secret_post` |
 | [#22](https://github.com/oidcphp/core/issues/22) | `client_secret_post` 會在 request body 結尾加上 NUL 字元 | |
 | [#23](https://github.com/oidcphp/core/issues/23) | 表單 body 使用 RFC 3986 編碼，而不是 `application/x-www-form-urlencoded` | |
-| [#43](https://github.com/oidcphp/core/issues/43) | `createAuthorizeFormPostResponse()` 與 `initiateLogoutFormPostResponse()` 產生的 HTML 沒有跳脫參數 | 改用 redirect 版本，或不要把使用者輸入當成參數 |
 
 另外請注意：
 
