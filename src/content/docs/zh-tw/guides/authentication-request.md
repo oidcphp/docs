@@ -35,7 +35,9 @@ $response = $client->createAuthorizeFormPostResponse([
 ]);
 ```
 
-產生的 HTML 會跳脫參數名稱、參數值與 endpoint URI。表單帶有 `state` 與 `nonce`，所以 response 會加上 `Content-Type: text/html; charset=utf-8` 與 `Cache-Control: no-store`。
+:::note
+表單帶有 `state` 與 `nonce`，所以 response 會加上 `Cache-Control: no-store`。
+:::
 
 ## 參數
 

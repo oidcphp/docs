@@ -35,7 +35,9 @@ $response = $client->createAuthorizeFormPostResponse([
 ]);
 ```
 
-The parameter names, the values and the endpoint URI are escaped in the generated HTML. The response has `Content-Type: text/html; charset=utf-8` and `Cache-Control: no-store`, since the form carries `state` and `nonce`.
+:::note
+The response has `Cache-Control: no-store`, since the form carries `state` and `nonce`.
+:::
 
 ## Parameters
 
