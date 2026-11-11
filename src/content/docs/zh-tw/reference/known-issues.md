@@ -14,7 +14,6 @@ description: 目前尚未符合規範的行為。
 | [#21](https://github.com/oidcphp/core/issues/21) | `Issuer::discover()` 不會驗證設定裡的 `issuer` | 只從你自己設定的網址對信任的 Provider 做 Discovery |
 | [#20](https://github.com/oidcphp/core/issues/20) | `client_secret_basic` 沒有對 credentials 做 form-urlencode | `client_id` 與 `client_secret` 避免特殊字元，或改用 `client_secret_post` |
 | [#22](https://github.com/oidcphp/core/issues/22) | `client_secret_post` 會在 request body 結尾加上 NUL 字元 | |
-| [#23](https://github.com/oidcphp/core/issues/23) | 表單 body 使用 RFC 3986 編碼，而不是 `application/x-www-form-urlencoded` | |
 
 另外請注意：
 
