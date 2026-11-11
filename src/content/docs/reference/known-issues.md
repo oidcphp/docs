@@ -14,7 +14,6 @@ The goal of the library is to follow the specifications exactly. These behaviors
 | [#21](https://github.com/oidcphp/core/issues/21) | `Issuer::discover()` does not validate the `issuer` of the configuration | Only discover trusted providers from a URL you configured |
 | [#20](https://github.com/oidcphp/core/issues/20) | `client_secret_basic` does not form-urlencode the credentials | Avoid special characters in `client_id` and `client_secret`, or use `client_secret_post` |
 | [#22](https://github.com/oidcphp/core/issues/22) | `client_secret_post` appends a NUL character to the request body | |
-| [#23](https://github.com/oidcphp/core/issues/23) | Form bodies use RFC 3986 encoding instead of `application/x-www-form-urlencoded` | |
 
 Also note:
 
