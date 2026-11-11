@@ -36,7 +36,7 @@ $httpClient = new HttpClientManager(new GuzzleClient());
 
 ## JOSE library
 
-`oidc/core` signs and verifies JWTs with `web-token/jwt-library`, which is installed as a dependency. Both `^3.3` and `^4.0` are supported, so `oidc/core` can be installed next to an application that already uses either version.
+`oidc/core` verifies JWTs with `web-token/jwt-library`, which is installed as a dependency. Both `^3.3` and `^4.0` are supported, so `oidc/core` can be installed next to an application that already uses either version.
 
 ## Verify Installation
 
