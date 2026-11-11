@@ -34,6 +34,10 @@ $httpClient = new HttpClientManager(new GuzzleClient());
 `MilesChou\Psr` comes from the `mileschou/psr` package, which is installed as a dependency of `oidc/core`.
 :::
 
+## JWT library
+
+`oidc/core` verifies JWTs with `web-token/jwt-library`, which is installed as a dependency. Both `^3.3` and `^4.2` are supported, so `oidc/core` can be installed next to an application that already uses either version.
+
 ## Verify Installation
 
 ```php
