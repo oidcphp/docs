@@ -13,7 +13,7 @@ $response = $client->initiateLogoutRedirectResponse([
 ]);
 ```
 
-和 Authentication Request 一樣，結果是 `302` 的 PSR-7 response。`initiateLogoutFormPostResponse()` 則會產生以 POST 送出相同參數的 HTML 表單。這個表單目前不會跳脫參數，請見 [oidcphp/core#43](https://github.com/oidcphp/core/issues/43)。
+和 Authentication Request 一樣，結果是 `302` 的 PSR-7 response。`initiateLogoutFormPostResponse()` 則會產生以 POST 送出相同參數的 HTML 表單。
 
 參數會原樣送出。建議使用的參數：
 

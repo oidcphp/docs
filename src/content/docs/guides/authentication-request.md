@@ -35,8 +35,8 @@ $response = $client->createAuthorizeFormPostResponse([
 ]);
 ```
 
-:::danger
-The generated HTML does not escape the parameters yet ([oidcphp/core#43](https://github.com/oidcphp/core/issues/43)). Until it is fixed, do not pass user input as a parameter, or use the redirect variant.
+:::note
+The response has `Cache-Control: no-store`, since the form carries `state` and `nonce`.
 :::
 
 ## Parameters
