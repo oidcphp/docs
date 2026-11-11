@@ -36,7 +36,7 @@ $httpClient = new HttpClientManager(new GuzzleClient());
 
 ## JWT 函式庫
 
-`oidc/core` 使用 `web-token/jwt-library` 驗證 JWT，安裝 `oidc/core` 時會一併安裝。`^3.3` 與 `^4.0` 都支援，所以應用程式已經使用其中任一版本時，也能安裝 `oidc/core`。
+`oidc/core` 使用 `web-token/jwt-library` 驗證 JWT，安裝 `oidc/core` 時會一併安裝。`^3.3` 與 `^4.2` 都支援，所以應用程式已經使用其中任一版本時，也能安裝 `oidc/core`。
 
 ## 確認安裝
 
